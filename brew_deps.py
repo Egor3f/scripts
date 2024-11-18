@@ -37,3 +37,6 @@ def main():
         if pkg not in leaves:
             continue
         print(f'Pkg: {pkg:<20} deps: {deps}')
+
+if __name__ == '__main__':
+    main()
