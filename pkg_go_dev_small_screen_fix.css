@@ -14,3 +14,11 @@
         display: block;
     }
 }
+@media screen and (min-width: 50rem) {
+    :root[data-layout=responsive] .go-Main-navMobile {
+        display: none;
+    }
+}
+.go-Main-nav {
+    padding: 0;
+}
