@@ -1,0 +1,16 @@
+@media screen and (min-width: 50rem) {
+    :root[data-layout=responsive] .go-Main {
+        grid-template: repeat(5, min-content) / 21.5% minmax(0, auto);
+        grid-template-areas:
+        "banner banner"
+        "header header"
+        "aside aside"
+        "nav article"
+        "footer footer";
+    }
+}
+@media screen and (min-width: 50rem) {
+    :root[data-layout=responsive] .go-Main-navDesktop {
+        display: block;
+    }
+}
