@@ -1,0 +1,12 @@
+.pb-8, .pb-2 {
+  padding: 0;
+}
+.min-h-12 {
+  min-height: 0;
+}
+.relative.flex.w-full.min-w-0.justify-between.px-1.py-1 {
+  padding: 0;
+}
+nav.sticky {
+  padding: 10px;
+}
