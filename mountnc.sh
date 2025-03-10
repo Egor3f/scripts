@@ -13,7 +13,10 @@ if pgrep rclone; then
 fi
 
 rm -rf $MOUNT_DIR/.DS_Store
-
+if [[ -d $MOUNT_DIR ]]; then
+  rm -r $MOUNT_DIR
+fi
+mkdir $MOUNT_DIR
 rm -rf $CACHE_DIR
 
 touch $LOG_FILE
@@ -39,7 +42,7 @@ rclone mount nextcloud:/ $MOUNT_DIR \
   --log-file=$LOG_FILE \
   --log-level INFO \
   --daemon \
-  && echo running rclone \
-  || echo failed to run: code $?
+  && echo ✅ running rclone \
+  || echo ❌ failed to run: code $?
 
 tail $LOG_FILE
