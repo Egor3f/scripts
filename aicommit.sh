@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-MODEL="${AIC_MODEL:-opencode-go/qwen3.5-plus}"
+MODEL="${AIC_MODEL:-opencode-go/minimax-m2.5}"
 
 if ! git rev-parse --git-dir >/dev/null 2>&1; then
     echo "not a git repo" >&2
