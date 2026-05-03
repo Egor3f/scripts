@@ -61,6 +61,7 @@ printf '\n\033[1m--- proposed commit message ---\033[0m\n%s\n\033[1m------------
 printf 'commit? [Y]es / [n]o / [e]dit: '
 read -r ans </dev/tty
 
+ans="${ans%%[[:space:]]}"
 case "${ans:-y}" in
     n|N) echo "aborted"; exit 1 ;;
     e|E)
